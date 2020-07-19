@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2a6b2ab06b.js" crossorigin="anonymous"></script>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            .anim:hover{
+                animation-name: example;
+                animation-duration: 1s;
+            }
+            @keyframes example{
+                0% {transform: translateY(6px);}
+                25% {transform: translateY(-12px);}
+                50% {transform: translateY(8px);}
+                75% {transform: translateY(-6px);}
+                100% {transform: translateY(2px);}
+            }
+            .anim2:hover{
+                animation-name: example2;
+                animation-duration: 1s;
+            }
+            @keyframes example2 {
+                0% {background-color: #495867;}
+                50% {background-color: #ECC8AF;}
+                100%{background-color: #495867;}
+            }
+            .nav-link{
+                color: black !important;
+                padding: 20px;
+            }
+            .nav-link:hover{
+                color: white !important;
+                background-color: #495867;
+            }
+            .nav-link.ddl-menu{
+                color:black !important;
+            }
+            .nav-link.ddl-menu:hover{
+                color: white !important;
+            }
+            .card{
+                background-color: #495867;
+                color: white;
+            }
+            .btn{
+                white-space: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><h1 class="display-3">MoGenic</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link h3 mx-1 font-weight-light text-uppercase" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle h3 font-weight-light text-uppercase mx-1 ddl-menu" href="#" id="categrioes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="food_photography.html">Food</a>
+                    <a class="dropdown-item" href="Portrait_photography.html">Portrait</a>
+                    <a class="dropdown-item" href="Event_Photography.HTML">Event</a>
+                    <a class="dropdown-item" href="Sports_Photography.html">Sport</a>
+                
+                </li>
+                <li class="nav-item">
+                    
+                  <a class="nav-link mx-1 font-weight-light text-uppercase h3" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    
+                    <a class="nav-link mx-1 font-weight-light text-uppercase h3" href="#why">Why Mogenic?</a>
+                  </li>
+                <li class="nav-item">
+                    
+                    <a class="nav-link mx-1 font-weight-light text-uppercase h3" href="#contact">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        <div class="container-flex bg-dark" style="min-height: 100vh;">
+            <div class="container">
+                <div class="row" style="padding-top: 40vh;">
+                    <div class="col-12">
+                        <p class="display-3 text-light text-center">
+                            Where Creativity And <br> Moments Are Met!
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-light text-center" style="padding-bottom: 40vh;">
+                    <h4 class="font-weight-light">Welcome to Mogenic , an online platform that helps you find professional photogarphers and videographers tailored to your needs</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container-flex" style="background-color: #ECC8AF;">
+            <div class="container py-5">
+                <h1 class="display-2 text-center mb-5">Categories</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 my-2">
+                        <div class="card p-2 text-center anim" style="height: 100%;">
+                            <img class="card-img-top" src="food.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Food Photography</h5>
+                                <a href="food_photography.html" class="btn btn-primary">Find Photographers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 my-2">
+                        <div class="card p-2 text-center anim" style="height: 100%;">
+                            <img class="card-img-top" src="sport.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Sports Photography</h5>
+                                <a href="food_photography.html" class="btn btn-primary">Find Photographers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 my-2">
+                        <div class="card p-2  text-center anim" style="height: 100%;">
+                            <img class="card-img-top" src="event.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Event Photography</h5>
+                                <a href="food_photography.html" class="btn btn-primary">Find Photographers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 my-2">
+                        <div class="card p-2  text-center anim" style="height: 100%;">
+                            <img class="card-img-top" src="portait.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Portrait Photography</h5>
+                                <a href="food_photography.html" class="btn btn-primary">Find Photographers</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-flex bg-dark anim2" id="about">
+            <div class="container py-5">
+                <h1 class="display-2 text-center mb-5 text-white">About MoGenic</h1>
+                <p class="text-white">Our platform is made to help the Kuwaiti society find photographers and videographers for their special days, projects and businesses in a faster and easier way possible. We also aim to encourage 
+                     photographers and videographers to take a step further and provide them a quick relationship with the community  
+                </p>
+                <!-- <p class="text-white">In hac habitasse platea dictumst. Nunc nec fermentum ipsum. Vivamus tempor purus et felis porttitor pellentesque. Nam erat lacus, pretium quis arcu porttitor, fermentum hendrerit eros. Ut turpis nisl, congue et posuere et, sodales vitae leo. Proin eget faucibus lacus. Proin egestas semper commodo. Aenean at facilisis tortor, vitae vulputate purus. Aenean blandit quam eget volutpat pellentesque.</p> -->
+            </div>
+        </div>
+        <div class="container-flex" id="why">
+                <div class="row mx-0">
+                    <div class="col-md-6" style="background-color: #495867; min-height: 70vh;">
+                        <h1 class="display-1 text-center text-white" style="padding-top: 25vh;">Why Mo?</h1>
+                    </div>
+                    <div class="col-md-6 align-self-center" style="background-color: #ECC8AF; min-height: 70vh;">
+                        <h1 class="display-3 text-center" style="padding-top: 25vh;">Mo shot for Mo-ments</h1> 
+                    </div>
+                </div>
+                <div class="row mx-0">
+                    <div class="col-md-6" style="background-color: #ECC8AF; min-height: 70vh;">
+                       <h1 class="display-3 text-center" style="padding-top: 25vh;">Short for Photogenic</h1> 
+                    </div>
+                    <div class="col-md-6" style="background-color: #495867; min-height: 70vh;">
+                        <h1 class="display-1 text-center text-white" style="padding-top: 25vh;">Why Genic?</h1>
+                    </div>
+                </div>
+                <div class="row mx-0">
+                    <div class="col-md-6" style="background-color: #495867; min-height: 70vh;">
+                        <h1 class="display-1 text-center text-white" style="padding-top: 25vh;">Why MoGenic?</h1>
+                    </div>
+                    <div class="col-md-6" style="background-color: #ECC8AF; min-height: 70vh;">
+                        <h1 class="display-3 text-center" style="padding-top: 25vh;">Where Creativity and Moments are Met</h1> 
+                    </div>
+                </div>
+        </div>
+        <div class="container-flex bg-dark" id="contact">
+            <div class="container">
+                <h1 class="display-4 text-center mb-2 text-white">Contact</h1>
+                <div class="row">
+                    <div class="col-12 text-white p-2 text-center">
+                        <h4 class="font-weight-light my-3">saraalqassar2004@gmail.com</h4>
+                        <h4 class="font-weight-light my-3">+965 99737836</h4>
+                        <h5 class="font-weight-light my-3">Kuwait City</h4>
+                        <a class="mx-2" href="#"><i class="fab fa-instagram" style="font-size: 60px;"></i></a>
+                        <a class="mx-2" href="#"><i class="fab fa-linkedin" style="font-size: 60px;"></i></a>
+                        <a class="mx-2" href="https://twitter.com/mogenickwt"><i class="fab fa-twitter" style="font-size: 60px;"></i></a>
+                    </div>
+                </div>
+                <div class="row text-white p-3">
+                    <div class="col-12">
+                        <h6 class="text-center">&copy copyrights Mogenic 2020</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

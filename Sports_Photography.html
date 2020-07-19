@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2a6b2ab06b.js" crossorigin="anonymous"></script>
+        <style>
+
+            html{
+                scroll-behavior: smooth;
+            }
+
+
+            .card-flip  > div{
+                backface-visibility: hidden;
+                transition: transform 300ms;
+                transition-timing-function: linear;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                display: flex;
+            }
+            .card-front{
+                transform: rotateY(0deg);
+            }
+            .card-back {
+                transform: rotateY(180deg);
+                position: absolute;
+                top: 0;
+            }
+            .card-flip:hover .card-front {
+                transform: rotateY(-180deg);
+            }
+                
+            .card-flip:hover .card-back {
+                transform: rotateY(0deg);
+            }
+            .nav-link{
+                color: black !important;
+                padding: 20px;
+            }
+            .nav-link:hover{
+                color: white !important;
+                background-color: #495867;
+            }
+            .nav-link.ddl-menu{
+                color:black !important;
+            }
+            .nav-link.ddl-menu:hover{
+                color: white !important;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><h1 class="display-3 mx-1">MoGenic</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link h3 mx-1 font-weight-light text-uppercase" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle h3 font-weight-light text-uppercase mx-1 ddl-menu" href="#" id="categrioes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="food_photography.html">Food</a>
+                    <a class="dropdown-item" href="Portrait_photography.html">Portrait</a>
+                    <a class="dropdown-item" href="Event_Photography.HTML">Event</a>
+                    <a class="dropdown-item" href="Sports_Photography.html">Sport</a>
+                
+                </li>
+                <li class="nav-item">
+                    
+                  <a class="nav-link mx-1 font-weight-light text-uppercase h3" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    
+                    <a class="nav-link mx-1 font-weight-light text-uppercase h3" href="#">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        <div class="container-flex" style="background-color: #ECC8AF;">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="sportphotography1.jpg"></img>
+                                        <h3 class="text-center">SPORT PHOTOGRAPHER </h3>
+                                        <p>Videographer:Mia Ryan</p>
+                                        <p>Freelancer</p>
+                                        <p>3 years experience</p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-body text-center">
+                                        <h1 class="card-text display-4">About</h1>
+                                       
+                                        <div class="card-text">Hello my name is Mia Ryan, a professional Photographer that gives you the opportunity to capture your memorable moments. </div>
+                                       
+                                        <a href="#booking"><button type="button" class="btn-lg btn-primary mt-5"onclick="book('Photographer: Mia Ryan')">Book an Appointment</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="sportphotography2.jpg"></img>
+                                        <h3 class="text-center">SPORT PHOTOGRAPHER</h3>
+                                        <p>Photographer: Amelia Stephen	</p>
+                                        <p>Freelancer</p>
+                                        <p>7 years experience</p>
+                                    </div>
+                                </div>
+                                <div class="card-back"> 
+                                    <div class="card-body text-center">
+                                        <h1 class="card-text display-4">About</h1>
+                                        
+                                        <div class="card-text">Hello my name is Amelia Stephen, a professional Photographer that gives you the opportunity to capture your memorable moments. </div>
+                                        
+                                        <a href="#booking"><button type="button" class="btn-lg btn-primary mt-5"onclick="book('Photographer: Amelia Stephen')">Book an Appointment</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="sportphotography3.jpg"></img>
+                                        <h3 class="text-center">SPORT PHOTOGRAPHER</h3>
+                                        <p>Photographer: Grace Justin </p>
+                                        <p>Freelancer</p>
+                                        <p>2 years experience</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-body text-center"> 
+                                        <h1 class="card-text display-4">About</h1>
+                                     
+                                        <div class="card-text">Hello my name is Grace Justin, a professional Photographer that gives you the opportunity to capture your memorable moments. </div>
+                                        
+                                        <a href="#booking"><button type="button" class="btn-lg btn-primary mt-5"onclick="book('Photographer: Grace Justin')">Book an Appointment</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="sportphotography4.jpg"></img>
+                                        <h3 class="text-center">SPORT PHOTOGRAPHER /VIDEOGRAPHER</h3>
+                                        <p>Photographer: Nicholas Eric</p>
+                                        <p>Freelancer</p>
+                                        <p>4 years experience</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-body text-center">
+                                        <h1 class="card-text display-4">About</h1>
+                                        
+                                        <div class="card-text">Hello my name is Nicholas, a professional Photographer that gives you the opportunity to capture your memorable moments. </div>
+                                        
+                                        <a href="#booking"><button type="button" class="btn-lg btn-primary mt-5"onclick="book('Photographer and Videographer: Nicholes Eric')">Book an Appointment</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white" >
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="sportphotography5.jpg"></img>
+                                        <h3 class="text-center">SPORT PHOTOGRAPHER /VIDEOGRAPHER</h3>
+                                        <p>Photographer: Scott Brandon</p>
+                                        <p>Freelancer</p>
+                                        <p>5 years experience</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-body text-center">
+                                        
+                                        <h1 class="card-text display-4">About</h1>
+                                        
+                                        <div class="card-text">Hello my name is Scott Brandon, a professional Photographer that gives you the opportunity to capture your memorable moments. </div>
+                                        
+                                        <a href="#booking"><button type="button" class="btn-lg btn-primary mt-5"onclick="book('Photographer and videographer: Scott Brandon')">Book an Appointment</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="sportphotography6.jpg"></img>
+                                        <h3 class="text-center"> SPORT PHOTOGRAPHER /VIDEOGRAPHER</h3>
+                                        <p>Photographer: Frank Benjamin </p>
+                                        <p>Freelancer</p>
+                                        <p>5 years experience</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-body text-center">
+                                        <h1 class="card-text display-4">About</h1>
+                                        <div class="card-text">Hello my name is Frank Benjamin, a professional Photographer that gives you the opportunity to capture your memorable moments. </div>
+                                        
+                                        <a href="#booking"><button type="button" class="btn-lg btn-primary mt-5"onclick="book('Photographer and Videographer: Frank Benjamin')">Book an Appointment</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-flex booking py-3 bg-dark text-white" id="booking" style="display: none;">
+            <div class="container">
+                <h4 id="FL" class="text-center">Photographer: X</h4>
+                <form>
+                    <div class="form-group"> Name</label>
+                        <input id="firstname" type="text" class="form-control mb-3" placeholder="First Name">
+
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" type="text" class="form-control mb-3" placeholder="Last Name">
+
+                        <label for="telephone">Telephone</label>
+                        <input class="form-control mb-3" type="tel" value="+965 99787863" id="example-tel-input" placeholder="telephone number">
+
+                        <label for="example-email-input">Email</label>
+                        <input class="form-control mb-3" type="email" value="Mogenickwt@example.com" id="example-email-input">
+
+                        <label for="example-date-input" >Date</label>
+                        <input class="form-control mb-3" type="date" value="2011-08-19" id="example-date-input">
+
+                        <label for="example-time-input">Time</label>
+                        <input class="form-control mb-3" type="time" value="13:45:00" id="example-time-input">
+
+                        <button type="button" onclick="success()" class="btn-lg btn-success">Submit</button>
+                        <input type="reset" class="btn-lg btn-warning">
+                        <a href="#nav"><button type="button" onclick="cancel()" class="btn-lg btn-danger">Cancel</button></a>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="container-flex bg-success py-5" id="submitSuccess" style="display: none;">
+            <h1 class="display-3 text-center text-white"><i class="far fa-check-circle"></i> Thank you for booking an appointment at MoGenic</h1>
+        </div>
+        <script>
+            function book(x){
+                document.getElementById("booking").style.display = "block";
+                document.getElementById("FL").innerHTML = x;
+            }
+            function cancel(){
+                document.getElementById("booking").style.display = "none";
+            }
+            function success(){
+                document.getElementById("booking").style.transition = "300ms";
+                document.getElementById("booking").style.display = "none";
+                document.getElementById("submitSuccess").style.transition = "300ms";
+                document.getElementById("submitSuccess").style.display = "block";
+            }
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
